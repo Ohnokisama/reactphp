@@ -11,7 +11,7 @@ const ListUser = () => {
 
   function getUsers() {
     // axios.get('http://localhost/api_tuts/users/')
-    axios.get('http://reactphp.free.nf/index.php/users/')
+    axios.get('https://reactphp.free.nf/index.php/users/')
     .then(function(res) {
       setUsers(res.data)
     })
@@ -19,7 +19,7 @@ const ListUser = () => {
 
   const deleteUser = userId => {
     // axios.delete(`http://localhost/api_tuts/user/${userId}/delete`)
-    axios.delete(`http://reactphp.free.nf/index.php/user/${userId}/delete`)
+    axios.delete(`https://reactphp.free.nf/index.php/user/${userId}/delete`)
     .then(res => {
       getUsers();
     })

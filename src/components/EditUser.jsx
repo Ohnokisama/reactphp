@@ -11,7 +11,7 @@ const EditUser = () => {
 
   useEffect(() => {
     // axios.get(`http://localhost/api_tuts/user/${id}`)
-    axios.get(`http://reactphp.free.nf/index.php/user/${id}`)
+    axios.get(`https://reactphp.free.nf/index.php/user/${id}`)
     .then(function(res) {
       console.log(res.data)
       setInputs(res.data)
@@ -30,7 +30,7 @@ const EditUser = () => {
     e.preventDefault()
     console.log(inputs)
     // axios.put(`http://localhost/api_tuts/user/${id}/edit`, inputs)
-    axios.put(`http://reactphp.free.nf/index.php/user/${id}/edit`, inputs)
+    axios.put(`https://reactphp.free.nf/index.php/user/${id}/edit`, inputs)
     .then(function(res) {
       console.log(res.data)
       navigate('/')

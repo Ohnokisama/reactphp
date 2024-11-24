@@ -19,7 +19,7 @@ const CreateUser = () => {
     console.log(inputs)
 
     // axios.post('http://localhost/api_tuts/user/save', inputs)
-    axios.post('http://reactphp.free.nf/index.php/user/save', inputs)
+    axios.post('https://reactphp.free.nf/index.php/user/save', inputs)
     .then(function(res) {
       console.log(res.data)
       navigate('/')
